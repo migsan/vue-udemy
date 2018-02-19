@@ -5,7 +5,16 @@ new Vue({
   data: {
     counter: 0,
     text: 'hello',
-    attachRed: false
+    attachRed: false,
+    color: 'green'
+  },
+  computed: {
+    colorClasses: function() {
+      return {
+        red: this.attachRed,
+        blue: !this.attachRed
+      };
+    }
   },
   watch: {
     counter: function() {

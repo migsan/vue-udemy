@@ -16,7 +16,12 @@
 
     <div class="demo"
       @click="attachRed = !attachRed"
-      :class="{red: attachRed}">Click for red</div>
+      :class="colorClasses">Click for red</div>
+
+    <div class="demo"
+      :class="color">Test class bind by name</div>
+
+    <input type="text" v-model="color">
   </section>
 </body>
 <script src="index.js"></script>

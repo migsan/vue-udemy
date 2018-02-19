@@ -1,9 +1,18 @@
 .demo {
-  border: 1px solid black;
   height: 100px;
   width: 200px;
+  text-align: center;
+  padding: 30px 0;
 }
 
 .red {
   background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
 }
