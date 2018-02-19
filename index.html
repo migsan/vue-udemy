@@ -6,12 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section id="app">
     <span>Counter:</span>
     <span>{{ counter }}</span>
     <button v-on:click="counter++">Increase</button>
+
+    <div class="demo"
+      @click="attachRed = !attachRed"
+      :class="{red: attachRed}">Click for red</div>
   </section>
 </body>
 <script src="index.js"></script>

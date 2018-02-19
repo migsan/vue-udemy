@@ -4,7 +4,8 @@ new Vue({
   el: '#app',
   data: {
     counter: 0,
-    text: 'hello'
+    text: 'hello',
+    attachRed: false
   },
   watch: {
     counter: function() {
